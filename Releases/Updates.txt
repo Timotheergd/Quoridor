@@ -1,0 +1,25 @@
+Version 0.0.3
+Première version contenant un menu et le plateau de jeu avec des boutons qui ne marchent pas.
+
+Version 1.0.0 
+Ajustement de la taille des boutons en fonction de la taille de l'écran
+Cependant, les boutons ne fonctionnent pas
+
+
+Version 1.0.1 à 1.0.3 inclus
+Echec de fonctionnement des boutons
+
+Version 1.0.4
+Fonctionnement des boutons et du joystick
+
+Version 1.1.0
+Ajout de barres de la couleur du joueur sur chaqu'un des bords du plateau
+Joystick remplacé par des boutons pour déplacer le mur qui ne s'affiche que l'orsque qu'un mur est en cours de positionnement
+Ajout d'une ombre qui se place à l'endroit ou le dernier joueur était avant de bouger
+Le volume est recalibré car il baissé trop rapidemant
+Le mur en cours de placement est détruit lorsque le joueur bouge
+Lors d'une victoire, le message n'est plus le numéro du joueur mais sa couleur
+
+Version 1.1.1
+Fix de la couleur du fantome/ombre du joueur 4 (vert)
+Ajout du forcage en mode Landscape Left
