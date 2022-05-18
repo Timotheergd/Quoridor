@@ -29,7 +29,7 @@ public class Game_grid : MonoBehaviour
         }
     }
 
-    public int move_player_left(Vector2Int player_pos, int player_num)
+    public List<Vector2Int> move_player_left(Vector2Int player_pos, int player_num, bool testing = false)
     {
         /*
             Move the player in the grid and ask where to jump if it is in diagonal
@@ -38,76 +38,106 @@ public class Game_grid : MonoBehaviour
                     - number of the player in the grid (int)
 
 
-            :output: - number of blocs to move in the direction (int) (0, 1 or 2)
+            :output: - number of blocs to move in the direction (int) (0, 1 or 2) if thisis not just to test
         */
+        List<Vector2Int> return_list = new List<Vector2Int>();
 
-        if (player_pos[0] < 2){return 0;} // if player will go out of the grid retur false and exit
-        if (grid[player_pos[0]-1,player_pos[1]] == wall_num){return 0;} // if there is a wall, return false and exit
+        if (player_pos[0] < 2){return_list.Add(new Vector2Int(0,0)); return return_list;} // if player will go out of the grid retur false and exit
+        if (grid[player_pos[0]-1,player_pos[1]] == wall_num){return_list.Add(new Vector2Int(0,0)); return return_list;} // if there is a wall, return false and exit
 
         if (grid[player_pos[0]-2,player_pos[1]] >= 1 && grid[player_pos[0]-2,player_pos[1]] <= 4) // if the player need to jump over an other player to move
         {
-            // if (player_pos[0] < 4){return 0;} // if the player is too close to the border to jump
             if (player_pos[0] < 4 || grid[player_pos[0]-3,player_pos[1]] == wall_num ||  (grid[player_pos[0]-4,player_pos[1]] >= 1 && grid[player_pos[0]-4,player_pos[1]] <= 4)) // if there is a wall or a player behind the player to jump by
             {
                 //check up and down (relative right and left)
                 bool can_jump_diaonal = false;
                 if (grid[player_pos[0]-2,player_pos[1]-1] == 0 && grid[player_pos[0]-2,player_pos[1]-2] == 0)
                 {
-                    // can go up / right
-                    if (playableMoveIndicatorRight != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorRight);
+                        // can go up / right
+                        if (playableMoveIndicatorRight != null)
+                        {
+                            Destroy(playableMoveIndicatorRight);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        }
+                        playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]-2));    
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,1));
                     }
-                    playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]-2));
                     can_jump_diaonal = true;
 
                 }
                 if (grid[player_pos[0]-2,player_pos[1]+1] == 0 && grid[player_pos[0]-2,player_pos[1]+2] == 0)
                 {
-                    // can go down / left
-                    if (playableMoveIndicatorLeft != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorLeft);
+                        // can go down / left
+                        if (playableMoveIndicatorLeft != null)
+                        {
+                            Destroy(playableMoveIndicatorLeft);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        }
+                        playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]+2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,-1));
                     }
-                    playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]+2));
                     can_jump_diaonal = true;
                 }
-                if (can_jump_diaonal) GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
-                return 0;
+                if (can_jump_diaonal)
+                {
+                    GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
+                    return return_list;
+                } 
+                return_list.Add(new Vector2Int(0,0));
+                return return_list;
             }
             
             else if (grid[player_pos[0]-4,player_pos[1]] == 0) // else if there is no wall and nothing behind the player
             {
-                //move of 2 blocs
-                grid[player_pos[0],player_pos[1]] = 0;
-                grid[player_pos[0]-4,player_pos[1]] = player_num;
-                return 2;
+                if (!testing)
+                {
+                    //move of 2 blocs
+                    grid[player_pos[0],player_pos[1]] = 0;
+                    grid[player_pos[0]-4,player_pos[1]] = player_num;
+                }
+                return_list.Add(new Vector2Int(2,0));
+                return return_list;
             }
 
-            return 1;
+            return_list.Add(new Vector2Int(1,0));
+            return return_list; // just so the compilator doesn't show an error but should never go there in theory
         }
         else
         {
-            // move of 1 bloc
-            grid[player_pos[0],player_pos[1]] = 0;
-            grid[player_pos[0]-2,player_pos[1]] = player_num;
-            return 1;
-        } 
+            if (!testing)
+            {
+                // move of 1 bloc
+                grid[player_pos[0],player_pos[1]] = 0;
+                grid[player_pos[0]-2,player_pos[1]] = player_num;
+            }
+            return_list.Add(new Vector2Int(1,0));
+            return return_list;
+        }
     }
 
-    public int move_player_right(Vector2Int player_pos, int player_num)
+    public List<Vector2Int> move_player_right(Vector2Int player_pos, int player_num, bool testing = false)
     {
         /*
             Move the player in the grid and ask where to jump if it is in diagonal
@@ -118,9 +148,10 @@ public class Game_grid : MonoBehaviour
 
             :output: - number of blocs to move in the direction (int) (0, 1 or 2)
         */
+        List<Vector2Int> return_list = new List<Vector2Int>();
 
-        if (player_pos[0] > 14){return 0;} // if player will go out of the grid retur false and exit
-        if (grid[player_pos[0]+1,player_pos[1]] == wall_num){return 0;} // if there is a wall, return false and exit
+        if (player_pos[0] > 14){return_list.Add(new Vector2Int(0,0)); return return_list;} // if player will go out of the grid retur false and exit
+        if (grid[player_pos[0]+1,player_pos[1]] == wall_num){return_list.Add(new Vector2Int(0,0)); return return_list;} // if there is a wall, return false and exit
 
         if (grid[player_pos[0]+2,player_pos[1]] >= 1 && grid[player_pos[0]+2,player_pos[1]] <= 4) // if the player need to jump over an other player to move
         {
@@ -130,59 +161,89 @@ public class Game_grid : MonoBehaviour
                 bool can_jump_diaonal = false;
                 if (grid[player_pos[0]+2,player_pos[1]-1] == 0 && grid[player_pos[0]+2,player_pos[1]-2] == 0)
                 {
-                    // can go down / right
-                    if (playableMoveIndicatorRight != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorRight);
+                        // can go down / right
+                        if (playableMoveIndicatorRight != null)
+                        {
+                            Destroy(playableMoveIndicatorRight);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        }
+                        playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]-2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,-1));
                     }
-                    playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]-2));
                     can_jump_diaonal = true;
                 }
                 if (grid[player_pos[0]+2,player_pos[1]+1] == 0 && grid[player_pos[0]+2,player_pos[1]+2] == 0)
                 {
-                    // can go up / left
-                    if (playableMoveIndicatorLeft != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorLeft);
+                        // can go up / left
+                        if (playableMoveIndicatorLeft != null)
+                        {
+                            Destroy(playableMoveIndicatorLeft);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        }
+                        playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]+2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,1));
                     }
-                    playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]+2));
                     can_jump_diaonal = true;
                 }
-                if (can_jump_diaonal) GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
-                return 0;
+                if (can_jump_diaonal)
+                {
+                    GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
+                    return return_list;
+                } 
+                return_list.Add(new Vector2Int(0,0));
+                return return_list;
             }
             
             else if (grid[player_pos[0]+4,player_pos[1]] == 0) // else if there if there is no wall and nothing behind the player
             {
-                //move of 2 blocs
-                grid[player_pos[0],player_pos[1]] = 0;
-                grid[player_pos[0]+4,player_pos[1]] = player_num;
-                return 2;
+                if (!testing)
+                {
+                    //move of 2 blocs
+                    grid[player_pos[0],player_pos[1]] = 0;
+                    grid[player_pos[0]+4,player_pos[1]] = player_num;
+                }
+                return_list.Add(new Vector2Int(2,0)); 
+                return return_list;
             }
-            return 1; // just so the compilator doesn't show an error but should never go there in theory
+            return_list.Add(new Vector2Int(1,0));
+            return return_list; // just so the compilator doesn't show an error but should never go there in theory
         }
         else
         {
-            // move of 1 bloc
-            grid[player_pos[0],player_pos[1]] = 0;
-            grid[player_pos[0]+2,player_pos[1]] = player_num;
-            return 1;
+            if (!testing)
+            {
+                // move of 1 bloc
+                grid[player_pos[0],player_pos[1]] = 0;
+                grid[player_pos[0]+2,player_pos[1]] = player_num;
+            }
+            return_list.Add(new Vector2Int(1,0));
+            return return_list;
         } 
     }
 
-    public int move_player_up(Vector2Int player_pos, int player_num)
+    public List<Vector2Int> move_player_up(Vector2Int player_pos, int player_num, bool testing = false)
     {
         /*
             Move the player in the grid and ask where to jump if it is in diagonal
@@ -193,9 +254,10 @@ public class Game_grid : MonoBehaviour
 
             :output: - number of blocs to move in the direction (int) (0, 1 or 2)
         */
+        List<Vector2Int> return_list = new List<Vector2Int>();
 
-        if (player_pos[1] < 2){return 0;} // if player will go out of the grid retur false and exit
-        if (grid[player_pos[0],player_pos[1]-1] == wall_num){return 0;} // if there is a wall, return false and exit
+        if (player_pos[1] < 2){return_list.Add(new Vector2Int(0,0)); return return_list;} // if player will go out of the grid retur false and exit
+        if (grid[player_pos[0],player_pos[1]-1] == wall_num){return_list.Add(new Vector2Int(0,0)); return return_list;} // if there is a wall, return false and exit
 
         if (grid[player_pos[0],player_pos[1]-2] >= 1 && grid[player_pos[0],player_pos[1]-2] <= 4) // if the player need to jump over an other player to move
         {
@@ -205,59 +267,96 @@ public class Game_grid : MonoBehaviour
                 bool can_jump_diaonal = false;
                 if (grid[player_pos[0]+1,player_pos[1]-2] == 0 && grid[player_pos[0]+2,player_pos[1]-2] == 0)
                 {
-                    // can go right
-                    if (playableMoveIndicatorRight != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorRight);
+                        // can go right
+                        if (playableMoveIndicatorRight != null)
+                        {
+                            Destroy(playableMoveIndicatorRight);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        }
+                        playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]-2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,1));
                     }
-                    playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]-2));
                     can_jump_diaonal = true;
                 }
                 if (grid[player_pos[0]-1,player_pos[1]-2] == 0 && grid[player_pos[0]-2,player_pos[1]-2] == 0)
                 {
-                    // can go down / left
-                    if (playableMoveIndicatorLeft != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorLeft);
+                        // can go down / left
+                        if (playableMoveIndicatorLeft != null)
+                        {
+                            Destroy(playableMoveIndicatorLeft);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        }
+                        playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]-2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,-1));
                     }
-                    playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]-2));
                     can_jump_diaonal = true;
                 }
-                if (can_jump_diaonal) GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
-                return 0;
+                if (can_jump_diaonal)
+                {
+                    // string s="Up\n";
+                    // foreach(Vector2Int v in return_list)
+                    // {
+                    //     s+= v.x.ToString() + " " + v.y.ToString() + "\n";
+                    // }
+                    // Debug.Log(s);
+
+                    GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
+                    return return_list;
+                } 
+                return_list.Add(new Vector2Int(0,0));
+                return return_list;
             }
             
             else if (grid[player_pos[0],player_pos[1]-4] == 0) // else if there if there is no wall and nothing behind the player
             {
-                //move of 2 blocs
-                grid[player_pos[0],player_pos[1]] = 0;
-                grid[player_pos[0],player_pos[1]-4] = player_num;
-                return 2;
+                if (!testing)
+                {
+                    //move of 2 blocs
+                    grid[player_pos[0],player_pos[1]] = 0;
+                    grid[player_pos[0],player_pos[1]-4] = player_num;
+                }
+                return_list.Add(new Vector2Int(2,0));
+                return return_list;
             }
-            return 1; // just so the compilator doesn't show an error but should never go there in theory
+            return_list.Add(new Vector2Int(1,0));
+            return return_list; // just so the compilator doesn't show an error but should never go there in theory
         }
         else
         {
-            // move of 1 bloc
-            grid[player_pos[0],player_pos[1]] = 0;
-            grid[player_pos[0],player_pos[1]-2] = player_num;
-            return 1;
+            if (!testing)
+            {
+                // move of 1 bloc
+                grid[player_pos[0],player_pos[1]] = 0;
+                grid[player_pos[0],player_pos[1]-2] = player_num;
+            }
+            return_list.Add(new Vector2Int(1,0));
+            return return_list;
         } 
     }
 
-    public int move_player_down(Vector2Int player_pos, int player_num)
+    public List<Vector2Int> move_player_down(Vector2Int player_pos, int player_num, bool testing = false)
     {
         /*
             Move the player in the grid and ask where to jump if it is in diagonal
@@ -268,9 +367,10 @@ public class Game_grid : MonoBehaviour
 
             :output: - number of blocs to move in the direction (int) (0, 1 or 2)
         */
+        List<Vector2Int> return_list = new List<Vector2Int>();
 
-        if (player_pos[1] > 14){return 0;} // if player will go out of the grid retur false and exit
-        if (grid[player_pos[0],player_pos[1]+1] == wall_num){return 0;} // if there is a wall, return false and exit
+        if (player_pos[1] > 14){return_list.Add(new Vector2Int(0,0)); return return_list;} // if player will go out of the grid retur false and exit
+        if (grid[player_pos[0],player_pos[1]+1] == wall_num){return_list.Add(new Vector2Int(0,0)); return return_list;} // if there is a wall, return false and exit
 
         if (grid[player_pos[0],player_pos[1]+2] >= 1 && grid[player_pos[0],player_pos[1]+2] <= 4) // if the player need to jump over an other player to move
         {
@@ -280,74 +380,97 @@ public class Game_grid : MonoBehaviour
                 bool can_jump_diaonal = false;
                 if (grid[player_pos[0]-1,player_pos[1]+2] == 0 && grid[player_pos[0]-2,player_pos[1]+2] == 0)
                 {
-                    // can go left (relative right)
-                    if (playableMoveIndicatorRight != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorRight);
+                        // can go left (relative right)
+                        if (playableMoveIndicatorRight != null)
+                        {
+                            Destroy(playableMoveIndicatorRight);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        }
+                        playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]+2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorRight = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorRight.name = "playableMoveIndicatorRight";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,-1));
                     }
-                    playableMoveIndicatorRight.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]-2,player_pos[1]+2));
                     can_jump_diaonal = true;
                 }
                 if (grid[player_pos[0]+1,player_pos[1]+2] == 0 && grid[player_pos[0]+2,player_pos[1]+2] == 0)
                 {
-                    // can go right(relative left)
-                    if (playableMoveIndicatorLeft != null)
+                    if (!testing)
                     {
-                        Destroy(playableMoveIndicatorLeft);
+                        // can go right(relative left)
+                        if (playableMoveIndicatorLeft != null)
+                        {
+                            Destroy(playableMoveIndicatorLeft);
+                        }
+                        else
+                        {
+                            // create a clickable object who will move the player
+                            playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
+                            playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        }
+                        playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]+2));
                     }
                     else
                     {
-                        // create a clickable object who will move the player
-                        playableMoveIndicatorLeft = Instantiate(playableMoveIndicator);
-                        playableMoveIndicatorLeft.name = "playableMoveIndicatorLeft";
+                        // diagonal move
+                        return_list.Add(new Vector2Int(1,1));
                     }
-                    playableMoveIndicatorLeft.transform.position = Gridpos_To_Worldpos(new Vector2Int(player_pos[0]+2,player_pos[1]+2));
                     can_jump_diaonal = true;
                 }
-                if (can_jump_diaonal) GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
-                return 0;
+                if (can_jump_diaonal)
+                {
+                    // string s="Down\n";
+                    // foreach(Vector2Int v in return_list)
+                    // {
+                    //     s+= v.x.ToString() + " " + v.y.ToString() + "\n";
+                    // }
+                    // Debug.Log(s);
+                    GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = true;
+                    return return_list;
+                } 
+                return_list.Add(new Vector2Int(0,0));
+                return return_list;
             }
             
             else if (grid[player_pos[0],player_pos[1]+4] == 0) // else if there if there is no wall and nothing behind the player
             {
-                //move of 2 blocs
-                grid[player_pos[0],player_pos[1]] = 0;
-                grid[player_pos[0],player_pos[1]+4] = player_num;
-                return 2;
+                if (!testing)
+                {
+                    //move of 2 blocs
+                    grid[player_pos[0],player_pos[1]] = 0;
+                    grid[player_pos[0],player_pos[1]+4] = player_num;
+                }
+                return_list.Add(new Vector2Int(2,0));
+                return return_list;
             }
-            return 1; // just so the compilator doesn't show an error but should never go there in theory
+            return_list.Add(new Vector2Int(1,0));
+            return return_list; // just so the compilator doesn't show an error but should never go there in theory
         }
         else
         {
-            // move of 1 bloc
-            grid[player_pos[0],player_pos[1]] = 0;
-            grid[player_pos[0],player_pos[1]+2] = player_num;
-            return 1;
+            if (!testing)
+            {
+                // move of 1 bloc
+                grid[player_pos[0],player_pos[1]] = 0;
+                grid[player_pos[0],player_pos[1]+2] = player_num;
+            }
+            return_list.Add(new Vector2Int(1,0));
+            return return_list;
         } 
     }
 
     public bool poseable(Vector2Int center_pos, bool rotation)
     {
-        //get the player number to get the current player
-        int player_num = 0;
-        if (MainManager.Instance.number_of_player == 4)
-        {
-            player_num = (GameObject.Find("/Game").GetComponent<Game_stats>().turn%4)+1;
-            if (player_num == 2) player_num = 3;
-            else if (player_num == 3) player_num = 2;
-        }
-        else if (MainManager.Instance.number_of_player == 2)
-        {
-            player_num = (GameObject.Find("/Game").GetComponent<Game_stats>().turn%2)+1;
-        }            
-        string player_name = "/Player" + player_num.ToString();
-        GameObject player = GameObject.Find(player_name);
+        GameObject player = GameObject.Find("/Game").GetComponent<Game_stats>().get_current_player_object();
 
         //test if there are wall left to the player
         if (!player.GetComponent<Player>().as_wall()) return false;
@@ -388,20 +511,7 @@ public class Game_grid : MonoBehaviour
             grid[wall_pos[0]+1, wall_pos[1]] = wall_num;
         }
 
-        //get the player number to get the current player
-        int player_num = 0;
-        if (MainManager.Instance.number_of_player == 4)
-        {
-            player_num = (GameObject.Find("/Game").GetComponent<Game_stats>().turn%4)+1;
-            if (player_num == 2) player_num = 3;
-            else if (player_num == 3) player_num = 2;
-        }
-        else if (MainManager.Instance.number_of_player == 2)
-        {
-            player_num = (GameObject.Find("/Game").GetComponent<Game_stats>().turn%2)+1;
-        }            
-        string player_name = "/Player" + player_num.ToString();
-        GameObject player = GameObject.Find(player_name);
+        GameObject player = GameObject.Find("/Game").GetComponent<Game_stats>().get_current_player_object();
 
         //remove 1 wall to the player
         player.GetComponent<Player>().decrement_wall();
@@ -602,4 +712,5 @@ public class Game_grid : MonoBehaviour
         if (player_can_go == MainManager.Instance.number_of_player) return true;
         else return false;
     }
+
 }

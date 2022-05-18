@@ -9,8 +9,7 @@ public class WinMenu : MonoBehaviour
 
     public GameObject androidUI;
     public GameObject winMenuUI;
-    public TMPro.TextMeshProUGUI winText;
-    
+    public TMPro.TextMeshProUGUI winText;    
 
     public void WinPause(string playerName)
     {

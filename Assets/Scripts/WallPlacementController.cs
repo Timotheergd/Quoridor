@@ -15,7 +15,7 @@ public class WallPlacementController : MonoBehaviour
     [SerializeField]
     private Material wrongPlacedWallMaterial;
     
-    private Vector3 hitPoint;
+    public Vector3 hitPoint;
 
     private GameObject currentPlaceableObject;
 
@@ -24,7 +24,7 @@ public class WallPlacementController : MonoBehaviour
     private Quaternion currentPlaceableObject_rotation;
     private Quaternion currentPlaceableObject_last_rotation;
 
-    private Vector2Int currentPlaceableObject_grid_position;
+    public Vector2Int currentPlaceableObject_grid_position;
 
     private float mouseWheelRotation;
 
@@ -63,20 +63,7 @@ public class WallPlacementController : MonoBehaviour
                 GameObject.Find("/Game").GetComponent<Game_stats>().jump_choosing = false;
             }
 
-            // get the number of the player to get the player
-            int player_num = 0;
-            if (MainManager.Instance.number_of_player == 4)
-            {
-                player_num = (GameObject.Find("/Game").GetComponent<Game_stats>().turn%4)+1;
-                if (player_num == 2) player_num = 3;
-                else if (player_num == 3) player_num = 2;
-            }
-            else if (MainManager.Instance.number_of_player == 2)
-            {
-                player_num = (GameObject.Find("/Game").GetComponent<Game_stats>().turn%2)+1;
-            }            
-            string player_name = "/Player" + player_num.ToString();
-            GameObject player = GameObject.Find(player_name);
+            GameObject player = GameObject.Find("/Game").GetComponent<Game_stats>().get_current_player_object();
 
             //test if there are wall left to the player
             if (!player.GetComponent<Player>().as_wall()) return;
@@ -125,6 +112,7 @@ public class WallPlacementController : MonoBehaviour
             {
                 // hitPoint.x = hitInfo.point.x;
                 // hitPoint.y = hitInfo.point.y;
+                // Debug.Log("Cam raycast in wall placement controler");
             }
             else
             {
@@ -160,7 +148,7 @@ public class WallPlacementController : MonoBehaviour
                         last_time_wall_move = Time.time;
                         if (MainManager.Instance.autoRotateCam == true)
                         {
-                            // get the player num to get the player
+                            // get the player num
                             int player_num = 0;
                             if (MainManager.Instance.number_of_player == 4)
                             {
@@ -269,7 +257,7 @@ public class WallPlacementController : MonoBehaviour
         }
     }
 
-    private float roundTo2point1(double pos)
+    public float roundTo2point1(double pos)
     {
         int neg = 1; // Store if the number is negative
         if (pos < 0)
@@ -291,14 +279,14 @@ public class WallPlacementController : MonoBehaviour
         return (float)(neg*roundedpos/10);
     }
 
-    private Vector2Int Wall_Worldpos_To_Gridpos(float worldposx, float worldposz)
+    public Vector2Int Wall_Worldpos_To_Gridpos(float worldposx, float worldposz)
     {
         int x = (int)(((((worldposx * -1) +1.1) /2.1) *2) +1);
         int y = (int)(((worldposz+7.3) /2.1) *2);
         return new Vector2Int(x, y);
     }
 
-    private Vector3 Wall_Gridpos_To_Worldpos(Vector2Int gridpos)
+    public Vector3 Wall_Gridpos_To_Worldpos(Vector2Int gridpos)
     {
         float x = (float)(((((gridpos.x-1) /2) *2.1) -1.05) *-1);
         float y = (float)((((gridpos.y-1) /2) *2.1) -7.35);

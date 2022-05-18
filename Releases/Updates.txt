@@ -23,3 +23,11 @@ Lors d'une victoire, le message n'est plus le numéro du joueur mais sa couleur
 Version 1.1.1
 Fix de la couleur du fantome/ombre du joueur 4 (vert)
 Ajout du forcage en mode Landscape Left
+
+Version 1.2.0
+ - Changement du fonctionnement des mouvements : le joueur est maintenant un bouton qui propose touts les coups légaux.
+ - Ajout de l'Easter Egg Mode Francois : unu bouton à droite de credit dans le menu credit est caché. Tous les 10 appuis sur  le botons, le mode francois se lance changeant les textures du jeu par une photo de francois. De plsu, lors d'un vistoire, le message affiché est "Francois WIN !" avec Fracois de la couleur du gagnant
+ - le mot de la couleur du gagnant dans le win menu est de la couleur affichée
+ - Suppression du phantome qui suit le joueur
+ - les murs peuvent etre deplacer avec le touch controle en drag and drop
+

@@ -10,9 +10,6 @@ public class Game_stats : MonoBehaviour
     public float last_move_time;
     public float time_between_turn;
 
-    public bool jump_choosing;
-    public bool is_placing_wall;
-
     [SerializeField]
     public GameObject Cam;
 
@@ -25,6 +22,39 @@ public class Game_stats : MonoBehaviour
     private Material player1Material;
     [SerializeField]
     private Material player2Material;
+
+    [SerializeField]
+    private Material francoisMaterial;
+    [SerializeField]
+    private Material francoisMaterial_table;
+    [SerializeField]
+    private Material player1_francois_material;
+    [SerializeField]
+    private Material player1Cube_francois_material;
+    [SerializeField]
+    private Material player1Bar_francois_material;
+    [SerializeField]
+    private Material player2_francois_material;
+    [SerializeField]
+    private Material player2Cube_francois_material;
+    [SerializeField]
+    private Material player2Bar_francois_material;
+    [SerializeField]
+    private Material player3_francois_material;
+    [SerializeField]
+    private Material player3Cube_francois;
+    [SerializeField]
+    private Material player3Bar_francois;
+    [SerializeField]
+    private Material player4_francois;
+    [SerializeField]
+    private Material player4Cube_francois;
+    [SerializeField]
+    private Material player4Bar_francois;
+    
+
+    public bool jump_choosing;
+    public bool is_placing_wall;
 
     public bool is_Left_KeyPressed;
     public bool is_Down_KeyPressed;
@@ -39,6 +69,8 @@ public class Game_stats : MonoBehaviour
     public bool is_Wall_Down_KeyPressed;
     public bool is_Wall_Right_KeyPressed;
     public bool is_Wall_Up_KeyPressed;
+
+    public bool is_player_moving;
 
     void Start()
     {
@@ -73,8 +105,48 @@ public class Game_stats : MonoBehaviour
         {
             player3.GetComponent<Player>().player_num = 3;
             player4.GetComponent<Player>().player_num = 4;
+
+            if (MainManager.Instance.is_modeFrancois)
+            {
+
+                GameObject player3Bar = GameObject.Find("Player3Cube/ColorIndicator");
+                GameObject player4Bar = GameObject.Find("Player4Cube/ColorIndicator");
+                
+                player3.GetComponent<MeshRenderer>().material = player3_francois_material;
+                player4.GetComponent<MeshRenderer>().material = player4_francois;
+                player3Cube.GetComponent<MeshRenderer>().material = player3Cube_francois;
+                player4Cube.GetComponent<MeshRenderer>().material = player4Cube_francois;
+                player3Bar.GetComponent<MeshRenderer>().material = player3Bar_francois;
+                player4Bar.GetComponent<MeshRenderer>().material = player4Bar_francois;
+            }
         }
 
+        if (MainManager.Instance.is_modeFrancois)
+        {
+            GameObject[] francoisObjects = GameObject.FindGameObjectsWithTag("Francois");
+            foreach(GameObject francois in francoisObjects)
+            {
+                francois.GetComponent<MeshRenderer>().material = francoisMaterial;
+            }
+            
+            GameObject player1Cube = GameObject.Find("Player1Cube");
+            GameObject player1Bar = GameObject.Find("Player1Cube/ColorIndicator");
+            GameObject player2Bar = GameObject.Find("Player2Cube/ColorIndicator");
+
+            player1.GetComponent<MeshRenderer>().material = player1_francois_material;
+            player1Cube.GetComponent<MeshRenderer>().material = player1Cube_francois_material;
+            player1Bar.GetComponent<MeshRenderer>().material = player1Bar_francois_material;
+            player2.GetComponent<MeshRenderer>().material = player2_francois_material;
+            player2Cube.GetComponent<MeshRenderer>().material = player2Cube_francois_material;
+            player2Bar.GetComponent<MeshRenderer>().material = player2Bar_francois_material;
+
+            GameObject table = GameObject.Find("Table");
+            table.GetComponent<MeshRenderer>().material = francoisMaterial_table;
+            GameObject baseboard = GameObject.Find("Board/Cube");
+            baseboard.GetComponent<MeshRenderer>().material = francoisMaterial_table;
+
+        }
+        
         turn = 0;
         last_move_time = 0f;
     }
@@ -98,7 +170,7 @@ public class Game_stats : MonoBehaviour
     {
         is_placing_wall = false;
 
-        GameObject.Find("/Player" + ((turn%2)+1).ToString()).GetComponent<Player_mouvement>().check_win(); // check if the player win
+        GameObject.Find("/Player" + (get_current_player_num().ToString())).GetComponent<Player_mouvement>().check_win(); // check if the player win
 
         GameObject.Find("/AudioManager").GetComponent<AudioManager>().Play("NextTurn"); // play a sound
 
@@ -141,5 +213,33 @@ public class Game_stats : MonoBehaviour
         is_Wall_Down_KeyPressed = false;
         is_Wall_Right_KeyPressed = false;
         is_Wall_Up_KeyPressed = false;
+    }
+
+    public int get_current_player_num()
+    {
+        int player_num = 0;
+        if (MainManager.Instance.number_of_player == 4)
+        {
+            player_num = (turn%4)+1;
+            if (player_num == 2) player_num = 3;
+            else if (player_num == 3) player_num = 2;
+        }
+        else if (MainManager.Instance.number_of_player == 2)
+        {
+            player_num = (turn%2)+1;
+        }
+        return player_num;
+    }
+
+    public GameObject get_current_player_object()
+    {
+        string player_name = "/Player" + get_current_player_num().ToString();
+        GameObject player = GameObject.Find(player_name);
+        return player;
+    }
+
+    public void Set_jump_choosing(bool value)
+    {
+        jump_choosing = value;
     }
 }

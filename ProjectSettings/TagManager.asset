@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Board
   - 4Players
+  - playableMove
+  - Wall
+  - Francois
   layers:
   - Default
   - TransparentFX

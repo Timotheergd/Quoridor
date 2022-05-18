@@ -12,11 +12,14 @@ public class MainManager : MonoBehaviour
 
     public int volume;
 
+    public bool is_modeFrancois;
+
     private void Awake()
     {
         number_of_player = 2;
         autoRotateCam = true;
         volume = 1;
+        is_modeFrancois = false;
 
         if (Instance != null)
         {
@@ -28,3 +31,5 @@ public class MainManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 }
+
+
