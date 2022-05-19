@@ -31,3 +31,10 @@ Version 1.2.0
  - Suppression du phantome qui suit le joueur
  - les murs peuvent etre deplacer avec le touch controle en drag and drop
 
+Version 1.2.1
+Fix du anchor pour le bouton qui active le mode francois (n'a pas fonctionné)
+et passage a 3 touches au lieu de 10 pour activer le mode francois
+
+Version 1.2.2
+Fix du anchor pour le bouton qui active le mode francois
+ajout d'un son aléatoire qui se joue lors du lancement du mode francois (1 aléatoire parmis 4 son enregistrés par Francois lui meme)

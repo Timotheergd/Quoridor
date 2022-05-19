@@ -1,0 +1,854 @@
+Unity Editor version:    2020.3.18f1 (a7d1c678663c)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #124-Ubuntu SMP Thu Apr 14 19:46:19 UTC 2022
+Kernel version:          5.4.0-110-generic
+Architecture:            x86_64
+Available memory:        3875 MB
+Using pre-set license
+Pro License: NO
+Desktop is 3600 x 1080 @ 60 Hz
+
+COMMAND LINE ARGUMENTS:
+Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+/home/timothee/Documents/Documents/Programmation/Unity/Quoridorr
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+36837
+Successfully changed project path to: /home/timothee/Documents/Documents/Programmation/Unity/Quoridorr
+/home/timothee/Documents/Documents/Programmation/Unity/Quoridorr
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 62,29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Initialize engine version: 2020.3.18f1 (a7d1c678663c)
+[Subsystems] Discovering subsystems at path /home/timothee/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/timothee/Documents/Documents/Programmation/Unity/Quoridorr/Assets
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_NV_multisample_coverage GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+Renderer: NVIDIA GeForce GT 640/PCIe/SSE2
+Vendor:   NVIDIA Corporation
+Version:  4.5.0 NVIDIA 470.103.01
+GLES:     0
+ GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragm
+ent_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sa
+mpler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_
+ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_
+ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_multiview_texture_multisample GL_EXT_multiview_timer_query GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_E
+XT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sy
+nc_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_fd GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_fd GL_NV_timeline_semaphore GL_KHR_shader_subgroup GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_blend_square GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_pro
+gram2 GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_sh
+ader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 304121144
+Initialize mono
+Mono path[0] = '/home/timothee/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = '/home/timothee/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/home/timothee/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56689
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/timothee/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /home/timothee/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0,001747 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42,76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,712 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1713ms)
+		BeginReloadAssembly (36ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (499ms)
+			LoadAssemblies (33ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (169ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0,002409 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51,61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2,518 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2537ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (2268ms)
+			LoadAssemblies (498ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (610ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (917ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (714ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0,78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1778 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146,4 MB.
+System memory in use after: 146,5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2220.
+Total: 39,337936 ms (FindLiveObjects: 0,410750 ms CreateObjectMapping: 0,233354 ms MarkObjects: 26,065160 ms  DeleteObjects: 12,625591 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Sounds/nintendo_sounds/2/Default.wav
+  artifactKey: Guid(544997e0d1328cc5a9b34b7fc752c84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/2/Default.wav using Guid(544997e0d1328cc5a9b34b7fc752c84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd149188c56f8854354ecfd0378074003') in 0,540945 seconds 
+  Import took 0,546428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000233 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Explosion4.wav
+  artifactKey: Guid(98e3dc2947c8e7837801b4e210f4fe0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Explosion4.wav using Guid(98e3dc2947c8e7837801b4e210f4fe0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b387f3786b890da85e1eb3b94116335') in 0,066476 seconds 
+  Import took 0,071519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000283 seconds.
+  path: Assets/Prefab/AudioManager.prefab
+  artifactKey: Guid(a4ff28f2f4701bfd589cd5ffc59e99bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/AudioManager.prefab using Guid(a4ff28f2f4701bfd589cd5ffc59e99bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c63ec425e09ea81b2866ccd6a6c39cf3') in 0,099165 seconds 
+  Import took 0,105263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000217 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.17.34.ogg
+  artifactKey: Guid(8a524b1d60c0c6844b4d2af7138bc825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.17.34.ogg using Guid(8a524b1d60c0c6844b4d2af7138bc825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e06e6588b296a06a10947ac964fe39') in 0,018238 seconds 
+  Import took 0,023325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000218 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound3.mp3
+  artifactKey: Guid(1551ca936999f6ed7ab023a674f69963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound3.mp3 using Guid(1551ca936999f6ed7ab023a674f69963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee20b5eefcac310ad1ad5cdafdcce091') in 0,001878 seconds 
+  Import took 0,010756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000273 seconds.
+  path: Assets/Sounds/nintendo_sounds/2/Explosion.wav
+  artifactKey: Guid(41655966011485b7a8fc46d2f58a608e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/2/Explosion.wav using Guid(41655966011485b7a8fc46d2f58a608e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ed95af01d4041b57c60f46ce953663') in 0,035526 seconds 
+  Import took 0,041845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000281 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound1.mp3
+  artifactKey: Guid(21b25ae7d574e151c908de8d83e560e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound1.mp3 using Guid(21b25ae7d574e151c908de8d83e560e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd02a599a7ac281db1ede1e4a41c1a56') in 0,002595 seconds 
+  Import took 0,014689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000265 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Blip_Select21.wav
+  artifactKey: Guid(d301837dc8581ba3bad5bc376343bbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Blip_Select21.wav using Guid(d301837dc8581ba3bad5bc376343bbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ccded30e9dad87de35d7ffca0a1ef6e') in 0,021588 seconds 
+  Import took 0,028818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000244 seconds.
+  path: Assets/Sounds/nintendo_sounds/samples/wav/Explosion.wav
+  artifactKey: Guid(d52395f7c109498e5b1ddc601750da7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/samples/wav/Explosion.wav using Guid(d52395f7c109498e5b1ddc601750da7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbf13f460247a412a6e2c6b66a036dd') in 0,020767 seconds 
+  Import took 0,038788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000291 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Explosion.wav
+  artifactKey: Guid(d24fe0e23d0390fba9f1bffecb59adfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Explosion.wav using Guid(d24fe0e23d0390fba9f1bffecb59adfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a9993b2395ccb8eb3bbbebe30dd7c0') in 0,019843 seconds 
+  Import took 0,040750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000257 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Explosion2.wav
+  artifactKey: Guid(a20700e7bbb26ce2e95647980e799e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Explosion2.wav using Guid(a20700e7bbb26ce2e95647980e799e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4312635406fa0918ad947f1afe42b696') in 0,020609 seconds 
+  Import took 0,025984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000283 seconds.
+  path: Assets/Sounds/nintendo_sounds/samples/p3/Explosion.mp3
+  artifactKey: Guid(712a31babf8ca3129866d9acf8eeef20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/samples/p3/Explosion.mp3 using Guid(712a31babf8ca3129866d9acf8eeef20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39aa0ca793d5ade8d61220d16dbd8e2e') in 0,102783 seconds 
+  Import took 0,107745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000302 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Blip_Select25.wav
+  artifactKey: Guid(73531ba91fbf2f70eb43410eeed40660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Blip_Select25.wav using Guid(73531ba91fbf2f70eb43410eeed40660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf428bf57ff22407653f584159d1bd6') in 0,027590 seconds 
+  Import took 0,034782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000230 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound4.mp3
+  artifactKey: Guid(852f6cf6f1577cdc3b0325739c28c4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound4.mp3 using Guid(852f6cf6f1577cdc3b0325739c28c4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4125ed7266b850e40d090ce00ad670c') in 0,017661 seconds 
+  Import took 0,023339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000181 seconds.
+  path: Assets/Sounds/Francois_sounds
+  artifactKey: Guid(d3f38ac5497025c648f6dbb31d86e6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds using Guid(d3f38ac5497025c648f6dbb31d86e6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc85608980627227a08a629bec956dc') in 0,000836 seconds 
+  Import took 0,004548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000243 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.23.35.ogg
+  artifactKey: Guid(aedf042903d09d460ba7ca2c662f85c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.23.35.ogg using Guid(aedf042903d09d460ba7ca2c662f85c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4604f46532d515142fc02f6d164a3ae') in 0,035934 seconds 
+  Import took 0,041059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000250 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Blip_Select22.wav
+  artifactKey: Guid(42c6519df6f0e3f66a121364257bc315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Blip_Select22.wav using Guid(42c6519df6f0e3f66a121364257bc315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d48a1c50e4652684bd0dac8f2622c3') in 0,042802 seconds 
+  Import took 0,047797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000215 seconds.
+  path: Assets/Sounds/nintendo_sounds/2/Explosion2.wav
+  artifactKey: Guid(db66fe421f3f60d9481631699476a8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/2/Explosion2.wav using Guid(db66fe421f3f60d9481631699476a8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236659decfcec765b7213d6002bf1a56') in 0,015664 seconds 
+  Import took 0,021041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000234 seconds.
+  path: Assets/Sounds/nintendo_sounds/2/Explosion3.wav
+  artifactKey: Guid(b0a3f04100adc3eb2839e23b10a168ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/2/Explosion3.wav using Guid(b0a3f04100adc3eb2839e23b10a168ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49790e575aca96208cd9596c40068c7f') in 0,015495 seconds 
+  Import took 0,021621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000223 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Blip_Select24.wav
+  artifactKey: Guid(a4540c0339b92098fb634b6456fd968a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Blip_Select24.wav using Guid(a4540c0339b92098fb634b6456fd968a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff4ccc6bdb3acc78b8908273dfeefcb') in 0,103955 seconds 
+  Import took 0,108057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000250 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Default.wav
+  artifactKey: Guid(240106e68671d29f2ba01f8df7e12804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Default.wav using Guid(240106e68671d29f2ba01f8df7e12804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78025d6bc54f3124d5f5083ab6fbbc7') in 0,051995 seconds 
+  Import took 0,056182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000227 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_cound2.mp3
+  artifactKey: Guid(c848170a823f944299332acd1209cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_cound2.mp3 using Guid(c848170a823f944299332acd1209cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5def2f19aa1aba0e865e213901e81fe') in 0,026153 seconds 
+  Import took 0,030318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000228 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Blip_Select23.wav
+  artifactKey: Guid(d158a332263b0ecb98d87137ed22527c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Blip_Select23.wav using Guid(d158a332263b0ecb98d87137ed22527c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4c413ab75c1689f97f40c7ac76c78d') in 0,041742 seconds 
+  Import took 0,046937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000019 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Explosion5.wav
+  artifactKey: Guid(3ee1d2b0ede2cf7ce83d741b0a51a5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Explosion5.wav using Guid(3ee1d2b0ede2cf7ce83d741b0a51a5b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04e836d9437dba2ef35a6215461ef9b') in 0,058144 seconds 
+  Import took 0,063995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000329 seconds.
+  path: Assets/Sounds/nintendo_sounds/2/Explosion4.wav
+  artifactKey: Guid(812b436c40c908e959ab1f95875fc32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/2/Explosion4.wav using Guid(812b436c40c908e959ab1f95875fc32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62afeb396a393c716f2d155274332351') in 0,051062 seconds 
+  Import took 0,057202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000622 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Explosion3.wav
+  artifactKey: Guid(7be351f3d115190248893ea0f285bb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Explosion3.wav using Guid(7be351f3d115190248893ea0f285bb40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3674e022925f775132b5bf2cec3b5a1a') in 0,038294 seconds 
+  Import took 0,044446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000241 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.16.31.ogg
+  artifactKey: Guid(e8f8c47aae226582790997bf198e7421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.16.31.ogg using Guid(e8f8c47aae226582790997bf198e7421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f45f98c1b7ef7af6d34d4f39928a926') in 0,010635 seconds 
+  Import took 0,015595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103,564741 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound2.mp3
+  artifactKey: Guid(c848170a823f944299332acd1209cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound2.mp3 using Guid(c848170a823f944299332acd1209cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac061a526e7889e6cb5d5fcd1edc76d3') in 0,001486 seconds 
+  Import took 0,006260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,018524 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound2.mp3
+  artifactKey: Guid(c848170a823f944299332acd1209cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound2.mp3 using Guid(c848170a823f944299332acd1209cd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac061a526e7889e6cb5d5fcd1edc76d3') in 0,002172 seconds 
+  Import took 0,009905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91,094700 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup8.wav
+  artifactKey: Guid(395a8ce3d4789c834998d31c819b4339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup8.wav using Guid(395a8ce3d4789c834998d31c819b4339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad08c3820f0f66415f55f9b53121567') in 0,047925 seconds 
+  Import took 0,053876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000218 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup10.wav
+  artifactKey: Guid(f9a831d2a562c4d169fe515ae7c0e29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup10.wav using Guid(f9a831d2a562c4d169fe515ae7c0e29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84a912425ccbb13047b15ccfcd9dd20') in 0,033412 seconds 
+  Import took 0,039218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000282 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup18.wav
+  artifactKey: Guid(e85adf8176afaa41096ee6917bf45280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup18.wav using Guid(e85adf8176afaa41096ee6917bf45280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe31878523bbb69a79ff9d176c883998') in 0,014817 seconds 
+  Import took 0,020760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000241 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup17.wav
+  artifactKey: Guid(5a2f5df41ff842825bf743eaaf02d58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup17.wav using Guid(5a2f5df41ff842825bf743eaaf02d58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9912e6eb70c87981c132ecbf5c6f1d02') in 0,013173 seconds 
+  Import took 0,026200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000173 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup12.wav
+  artifactKey: Guid(94c6d3e10222e1fdf953fed213054e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup12.wav using Guid(94c6d3e10222e1fdf953fed213054e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c434553550b309412cf93775ddcb9812') in 0,028011 seconds 
+  Import took 0,033689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000174 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup23.wav
+  artifactKey: Guid(68017070fb40f2facac4911ea93ce601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup23.wav using Guid(68017070fb40f2facac4911ea93ce601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0886ea6d999a0313343d7c158987dabb') in 0,022785 seconds 
+  Import took 0,029430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000041 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup9.wav
+  artifactKey: Guid(0d27ba8e7637c2c9f9e3671b0ddacb78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup9.wav using Guid(0d27ba8e7637c2c9f9e3671b0ddacb78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d1b15cd3fb02055fafaf071cb02274') in 0,013702 seconds 
+  Import took 0,019135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000202 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup13.wav
+  artifactKey: Guid(0212e46abe81f6884b38c7cd255286da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup13.wav using Guid(0212e46abe81f6884b38c7cd255286da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91dcb2fd43a5db99a1450999fd2d18c4') in 0,014373 seconds 
+  Import took 0,020187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000197 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup16.wav
+  artifactKey: Guid(ea5d5733c42848343ab7f4dfcf59092d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup16.wav using Guid(ea5d5733c42848343ab7f4dfcf59092d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a02c94b5371e141bcf18e3ff7e34113') in 0,011806 seconds 
+  Import took 0,017661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000152 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup15.wav
+  artifactKey: Guid(365e4a6ec5033096b9c51943779bb32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup15.wav using Guid(365e4a6ec5033096b9c51943779bb32f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fea6fc9cd3bd71db86a0aaa8128f13') in 0,015237 seconds 
+  Import took 0,021965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000163 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup21.wav
+  artifactKey: Guid(b73600a44431d0380b2458e40d1fc4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup21.wav using Guid(b73600a44431d0380b2458e40d1fc4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5cf72e09d98fb82840cbab1e0af45c') in 0,018143 seconds 
+  Import took 0,024939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000271 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup14.wav
+  artifactKey: Guid(ef658fa7a01b0aa8986edf2b1f7035e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup14.wav using Guid(ef658fa7a01b0aa8986edf2b1f7035e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce573c10b8bffc70754c5c2c7947d35f') in 0,020463 seconds 
+  Import took 0,027079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000304 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup24.wav
+  artifactKey: Guid(13262df28819f08f98adc53db61a845b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup24.wav using Guid(13262df28819f08f98adc53db61a845b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b587c9a89147e09c5bb061bdca5a7ca3') in 0,010045 seconds 
+  Import took 0,015489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000236 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup22.wav
+  artifactKey: Guid(9b25e145d4cf26fb39db29bd0851a21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup22.wav using Guid(9b25e145d4cf26fb39db29bd0851a21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13583d339b8483328f14f34922a91d49') in 0,010610 seconds 
+  Import took 0,015564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000761 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup25.wav
+  artifactKey: Guid(91e9739066dc03d8b96cd88b85b6e384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup25.wav using Guid(91e9739066dc03d8b96cd88b85b6e384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a7f65f6a00c93f4b3c566c6c966f6e') in 0,052301 seconds 
+  Import took 0,057951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000268 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup19.wav
+  artifactKey: Guid(8ea410dfdeeeb3ebc95cf00dd907572f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup19.wav using Guid(8ea410dfdeeeb3ebc95cf00dd907572f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca0ec8cd4ec59c688b5a0b3d12e6aec') in 0,026836 seconds 
+  Import took 0,032717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000228 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup20.wav
+  artifactKey: Guid(d3d6f3732cdaaac919c8521e010aa968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup20.wav using Guid(d3d6f3732cdaaac919c8521e010aa968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80b3674a4f2cad699515e24390883140') in 0,018262 seconds 
+  Import took 0,024438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000226 seconds.
+  path: Assets/Sounds/nintendo_sounds/1/Powerup11.wav
+  artifactKey: Guid(6b228d86107aad413979dbe16852957b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/nintendo_sounds/1/Powerup11.wav using Guid(6b228d86107aad413979dbe16852957b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0c2fe23a863dabc1ad80d567103a8e') in 0,021377 seconds 
+  Import took 0,041722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 199,446185 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0,001332 seconds 
+  Import took 0,006818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000430 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0,000875 seconds 
+  Import took 0,006505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2,438910 seconds.
+  path: Assets/maat.cs
+  artifactKey: Guid(fa05fdcbbd373f61294f8d770a65d8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maat.cs using Guid(fa05fdcbbd373f61294f8d770a65d8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d014ec7a7689f751cfb8eed348336d5') in 0,002046 seconds 
+  Import took 0,010062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,003282 seconds.
+  path: Assets/maat.cs
+  artifactKey: Guid(fa05fdcbbd373f61294f8d770a65d8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/maat.cs using Guid(fa05fdcbbd373f61294f8d770a65d8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d014ec7a7689f751cfb8eed348336d5') in 0,001227 seconds 
+  Import took 0,008090 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0,002444 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0,50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1,138 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1138ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (959ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (308ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (298ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Switching build target platform(24) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0,48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0,00 ms.
+Unloading 1761 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146,5 MB.
+System memory in use after: 146,6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2230.
+Total: 6,938422 ms (FindLiveObjects: 0,537982 ms CreateObjectMapping: 0,254980 ms MarkObjects: 6,093614 ms  DeleteObjects: 0,049649 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16,497563 seconds.
+  path: Assets/texte déposé.txt
+  artifactKey: Guid(32047ac81540748fd89e6ef98d21efe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/texte déposé.txt using Guid(32047ac81540748fd89e6ef98d21efe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce810e2c7a8aaffa630c288e9f656b0') in 0,015856 seconds 
+  Import took 0,020379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6,602071 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b4cbde9565bf190136f1148817e1ea') in 0,001876 seconds 
+  Import took 0,008623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,001241 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b4cbde9565bf190136f1148817e1ea') in 0,001408 seconds 
+  Import took 0,009336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6,084968 seconds.
+  path: Assets/Sounds
+  artifactKey: Guid(f9176a1ee017e94f585eea124ee4fc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds using Guid(f9176a1ee017e94f585eea124ee4fc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f284d1a2b71e6023cf29c60ac2d0e2') in 0,000946 seconds 
+  Import took 0,005596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,003354 seconds.
+  path: Assets/Sounds
+  artifactKey: Guid(f9176a1ee017e94f585eea124ee4fc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds using Guid(f9176a1ee017e94f585eea124ee4fc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f284d1a2b71e6023cf29c60ac2d0e2') in 0,001307 seconds 
+  Import took 0,007677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 124,910578 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound8.mp3
+  artifactKey: Guid(435649259e57a1245a8d96ad116d20fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound8.mp3 using Guid(435649259e57a1245a8d96ad116d20fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76bf01d8fd64a273e39b8ee673fad38') in 0,002690 seconds 
+  Import took 0,010582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,009217 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound8.mp3
+  artifactKey: Guid(435649259e57a1245a8d96ad116d20fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound8.mp3 using Guid(435649259e57a1245a8d96ad116d20fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76bf01d8fd64a273e39b8ee673fad38') in 0,002837 seconds 
+  Import took 0,010796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3,439044 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound7.mp3
+  artifactKey: Guid(38de62e6b0cde76e1864dd2723bd78b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound7.mp3 using Guid(38de62e6b0cde76e1864dd2723bd78b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b3fd73b8da94884487dc3be43ee5df') in 0,002579 seconds 
+  Import took 0,008972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,003370 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound7.mp3
+  artifactKey: Guid(38de62e6b0cde76e1864dd2723bd78b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound7.mp3 using Guid(38de62e6b0cde76e1864dd2723bd78b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b3fd73b8da94884487dc3be43ee5df') in 0,001983 seconds 
+  Import took 0,008777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,450007 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound6.mp3
+  artifactKey: Guid(7d0af8170ace5b724b11ab4481073a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound6.mp3 using Guid(7d0af8170ace5b724b11ab4481073a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87aa0a0bf40e1c52289a516328090648') in 0,002549 seconds 
+  Import took 0,008560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,003172 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound6.mp3
+  artifactKey: Guid(7d0af8170ace5b724b11ab4481073a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound6.mp3 using Guid(7d0af8170ace5b724b11ab4481073a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87aa0a0bf40e1c52289a516328090648') in 0,001987 seconds 
+  Import took 0,009787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,467696 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound5.mp3
+  artifactKey: Guid(0a3e861786e6f1da7bd270a5d6e3cc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound5.mp3 using Guid(0a3e861786e6f1da7bd270a5d6e3cc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7c04969aa9b36c986860c79dda6e9a') in 0,002270 seconds 
+  Import took 0,008195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,003022 seconds.
+  path: Assets/Sounds/Francois_sounds/francois_sound5.mp3
+  artifactKey: Guid(0a3e861786e6f1da7bd270a5d6e3cc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/francois_sound5.mp3 using Guid(0a3e861786e6f1da7bd270a5d6e3cc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7c04969aa9b36c986860c79dda6e9a') in 0,001338 seconds 
+  Import took 0,005918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10,514998 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.14.39.ogg
+  artifactKey: Guid(6d3f222f1a420be0cbba1aed95875124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.14.39.ogg using Guid(6d3f222f1a420be0cbba1aed95875124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc4dcf7861b3852bc48430952450e92') in 0,001628 seconds 
+  Import took 0,006493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,008468 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.14.39.ogg
+  artifactKey: Guid(6d3f222f1a420be0cbba1aed95875124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.14.39.ogg using Guid(6d3f222f1a420be0cbba1aed95875124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc4dcf7861b3852bc48430952450e92') in 0,001944 seconds 
+  Import took 0,007672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181,556282 seconds.
+  path: Assets/francois_sound1.mp3
+  artifactKey: Guid(ef66fc65eb91ed9e2ad49730e6f43e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/francois_sound1.mp3 using Guid(ef66fc65eb91ed9e2ad49730e6f43e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6915a534bf6a4e3103a1ded95e1a85f8') in 0,003235 seconds 
+  Import took 0,010614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,006224 seconds.
+  path: Assets/francois_sound1.mp3
+  artifactKey: Guid(ef66fc65eb91ed9e2ad49730e6f43e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/francois_sound1.mp3 using Guid(ef66fc65eb91ed9e2ad49730e6f43e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6915a534bf6a4e3103a1ded95e1a85f8') in 0,006435 seconds 
+  Import took 0,013027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 222,499172 seconds.
+  path: Assets/WhatsApp Ptt 2022-05-19 at 14.14.39.mp3
+  artifactKey: Guid(19cc518f31a4bf735b378fed03ef73e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WhatsApp Ptt 2022-05-19 at 14.14.39.mp3 using Guid(19cc518f31a4bf735b378fed03ef73e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376d57e4214a0cc8dc2877bb55a40dbb') in 0,205966 seconds 
+  Import took 0,211598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000197 seconds.
+  path: Assets/WhatsApp Ptt 2022-05-19 at 14.17.34.mp3
+  artifactKey: Guid(53752b7bb986357cfa5b42f452f92bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WhatsApp Ptt 2022-05-19 at 14.17.34.mp3 using Guid(53752b7bb986357cfa5b42f452f92bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '854318b68d20459a3f253caf1e550589') in 0,011738 seconds 
+  Import took 0,016634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000220 seconds.
+  path: Assets/WhatsApp Ptt 2022-05-19 at 14.23.35.mp3
+  artifactKey: Guid(99c6c9e1168c7d2499686382d8f72d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WhatsApp Ptt 2022-05-19 at 14.23.35.mp3 using Guid(99c6c9e1168c7d2499686382d8f72d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0236917e531559d33d800db91937fb63') in 0,009910 seconds 
+  Import took 0,024846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000224 seconds.
+  path: Assets/francois_sound1.mp3
+  artifactKey: Guid(5d5d68ce421f9025ca89eefddeceac57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/francois_sound1.mp3 using Guid(5d5d68ce421f9025ca89eefddeceac57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496b9e25484c0774f275bebad595a9ee') in 0,002872 seconds 
+  Import took 0,008022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000200 seconds.
+  path: Assets/WhatsApp Ptt 2022-05-19 at 14.16.31.mp3
+  artifactKey: Guid(324c01820e8b655c4aa1a28dfe9bd291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WhatsApp Ptt 2022-05-19 at 14.16.31.mp3 using Guid(324c01820e8b655c4aa1a28dfe9bd291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eaacd9e818893d9c679426f1c3e569c') in 0,010436 seconds 
+  Import took 0,015908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5,252345 seconds.
+  path: Assets/francois_sound3.mp3
+  artifactKey: Guid(d7bc741583870eccc85b24cf321e6679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/francois_sound3.mp3 using Guid(d7bc741583870eccc85b24cf321e6679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859c25a998273ffb76ac343cdbc0bfd4') in 0,002426 seconds 
+  Import took 0,008988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,002600 seconds.
+  path: Assets/francois_sound3.mp3
+  artifactKey: Guid(d7bc741583870eccc85b24cf321e6679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/francois_sound3.mp3 using Guid(d7bc741583870eccc85b24cf321e6679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859c25a998273ffb76ac343cdbc0bfd4') in 0,001442 seconds 
+  Import took 0,006769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70,863335 seconds.
+  path: Assets/Joystick Pack
+  artifactKey: Guid(7406e776ae3d7f4b493e3617ab119013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack using Guid(7406e776ae3d7f4b493e3617ab119013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302aa954d3ddf01d99944f788c5bb95f') in 0,001458 seconds 
+  Import took 0,008095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000782 seconds.
+  path: Assets/Joystick Pack
+  artifactKey: Guid(7406e776ae3d7f4b493e3617ab119013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Joystick Pack using Guid(7406e776ae3d7f4b493e3617ab119013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302aa954d3ddf01d99944f788c5bb95f') in 0,001169 seconds 
+  Import took 0,006437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17,401111 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.14.39.mp3
+  artifactKey: Guid(f1792bd1c5cbd2fbdbd7c77a2a66b823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.14.39.mp3 using Guid(f1792bd1c5cbd2fbdbd7c77a2a66b823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483eb68c7e1424bcf676e45a663657b0') in 0,011516 seconds 
+  Import took 0,017016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000183 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.16.31.mp3
+  artifactKey: Guid(385080bb2e1851968ae86cd244341144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.16.31.mp3 using Guid(385080bb2e1851968ae86cd244341144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09863422abfbe07026ccf2bd75f05b3d') in 0,011603 seconds 
+  Import took 0,018206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000244 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.23.35.mp3
+  artifactKey: Guid(3670ae162f2187493a45b9b0ab20a717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.23.35.mp3 using Guid(3670ae162f2187493a45b9b0ab20a717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af81a0ff658b4ab7d08345414a59213') in 0,012240 seconds 
+  Import took 0,018712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,000354 seconds.
+  path: Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.17.34.mp3
+  artifactKey: Guid(8527ecfb2dee11a76b89fb3662cfa7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Francois_sounds/WhatsApp Ptt 2022-05-19 at 14.17.34.mp3 using Guid(8527ecfb2dee11a76b89fb3662cfa7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d389c77a8824ec73052f323f3bd86f6') in 0,012254 seconds 
+  Import took 0,019108 seconds .
+

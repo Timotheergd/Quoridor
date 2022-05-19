@@ -31,10 +31,11 @@ public class ModeFrancois : MonoBehaviour
     {
         clic_number++;
 
-        if (clic_number%10 == 0)
+        if (clic_number%3 == 0)
         {
             MainManager.Instance.is_modeFrancois = true;
             image.color = new Color(image.color.r, image.color.g, image.color.b, 1);
+            GameObject.Find("/AudioManager").GetComponent<AudioManager>().Play("francois_sound_" + Random.Range(1, 5).ToString());
         }
         else
         {

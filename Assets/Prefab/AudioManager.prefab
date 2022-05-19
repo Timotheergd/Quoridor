@@ -46,13 +46,43 @@ MonoBehaviour:
   sounds:
   - name: NextTurn
     clip: {fileID: 8300000, guid: d50d8644051e3360a8de56b1d0ba8aa2, type: 3}
+    audioMixer: {fileID: 0}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 9efbfac133992cb63b73d374f3f02921, type: 3}
+    audioMixer: {fileID: 0}
     volume: 0.6
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: francois_sound_1
+    clip: {fileID: 8300000, guid: f1792bd1c5cbd2fbdbd7c77a2a66b823, type: 3}
+    audioMixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: francois_sound_2
+    clip: {fileID: 8300000, guid: 385080bb2e1851968ae86cd244341144, type: 3}
+    audioMixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: francois_sound_3
+    clip: {fileID: 8300000, guid: 8527ecfb2dee11a76b89fb3662cfa7da, type: 3}
+    audioMixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: francois_sound_4
+    clip: {fileID: 8300000, guid: 3670ae162f2187493a45b9b0ab20a717, type: 3}
+    audioMixer: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
